@@ -31,6 +31,7 @@ button::-moz-focus-inner{padding: 0; border: 0;}
 a,a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul,li{list-style: none;}
+<<<<<<< HEAD
 image{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
@@ -75,3 +76,6 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     display: block;
     padding: 30px 0px 30px 0px;
 }
+=======
+image{vertical-align: top;}
+>>>>>>> parent of 048e9fc (обучился стилизации текста)
