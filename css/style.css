@@ -34,3 +34,44 @@ ul,li{list-style: none;}
 image{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
+.block_one {
+    line-height: 25px;
+    width: 500px;
+    margin: 0px 0px 20px 0px;
+}
+.span_one {
+    display: block; 
+}
+.a_one {
+    display: block;
+}
+.block_two {
+    margin: 20px 0px 30px 0px;
+    line-height: 25px;
+}
+.inline_block_one {
+    display: inline-block;
+    width: 200px;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+
+}
+.inline_bloc_two {
+    display: inline-block;
+    width: 600px;
+    margin: 30px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
+}
+.inline_block_three {
+    display: inline-block;
+    padding: 0px 100px 40px 0px;
+    
+    
+}
+.inline_block_four {
+    display: inline-block;
+}
+.block_three {
+    display: block;
+    padding: 30px 0px 30px 0px;
+}
