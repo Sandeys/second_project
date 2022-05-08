@@ -1,125 +1,126 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-*,*:before,*:after{
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
 
-nav,footer,header,aside{display: block;}
-
-html, body{
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+:focus, :active {
+  outline: none;
 }
-input,button,textarea{font-family: inherit;}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0; border: 0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul,li{list-style: none;}
-image{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+a:focus, a:active {
+  outline: none;
+}
 
-body{
-    min-width: 842px;
-    max-width: 842px;
-    margin:0 auto;
-    background-color: #e8e8e8;
-    font-size: 20px;
-    line-height: 36px;
-    color: #273d46;
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+image {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 840px;
+  font-size: 24px;
+  line-height: 24px;
+  color: blue;
 }
 
 .sourse {
-    text-transform: uppercase;
-    padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
+  font-size: 36px;
+  line-height: 24px;
+  color: green;
 }
-.list li::before{
-    content:'';
-    background: url(../img/check\ icon\ BLUE.svg) no-repeat 0px 10px;
-    padding: 10px 0 0 30px;
+
+.list {
+  color: black;
 }
-.list li:hover::before{
-    background: url(../img/check\ icon\ RED.svg) no-repeat 0px 10px;
+.list li {
+  padding: 0 0 10px 30px;
+  background: url("../../img/check icon BLUE.svg") 0 5px no-repeat;
 }
-.list li:nth-child(1){
-    text-decoration: line-through;
+.list li:hover {
+  color: aqua;
 }
-.list li:nth-child(2){
-    font-weight: 700;
+
+.button {
+  display: block;
+  background-color: aqua;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  margin: 20px 0 20px 0;
 }
-.list li:nth-child(3){
-    font-style: italic;
+
+.input {
+  padding-bottom: 30px;
+  border: 2px solid #000;
+  -webkit-box-shadow: 2px 2px rgba(0, 0, 0, 0.514);
+          box-shadow: 2px 2px rgba(0, 0, 0, 0.514);
+  margin: 0 0 20px 0;
 }
-.list li:nth-child(4){
-    text-transform: uppercase;
+
+.text_one {
+  padding-bottom: 30px;
+  color: orangered;
+  font-weight: 700;
 }
-.list{
-    padding: 0 0 20px 0;
-}
-.list li:hover{
-    text-decoration: none;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: none;
-    font-size: 20px;
-    line-height: 36px;
-    color: #d55a5a;
-}
-.button{
-    text-transform: uppercase;
-    color: #ffffff;
-    display: block;
-    letter-spacing: 5px;
-    background-color: #80b7b3;
-    border-radius: 45px;
-    width: 200px;
-    height: 45px;
-    transition: 0.3s;
-}
-.button::after{
-    content:'→';
-    padding-left: 8px;
-}
-.button:hover{
-    background-color: #3a5855;
-}
-.button:active{
-    background-color: #818181;
-}
-.input{
-    margin: 20px 0 0 0;
-    width:300px;
-    height:50px;
-    border: solid 1px #afafaf;
-}
-.input:focus{
-    box-shadow: 0px 0px 15px rgba(127, 189, 213, 0.8);
-}
-.text_one{
-    padding: 20px 0 0 0;
-}
-.text_one:first-line {
-    color: red;
-}
-.text_two:first-letter {
-    color: red;
-    font-size: 30px;
-}
-.text_two{
-    padding: 20px 0 0 0;
+
+.text_two {
+  color: orangered;
+  font-weight: 700;
 }
