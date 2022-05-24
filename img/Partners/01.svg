@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 47" width="35" height="47">
+	<title>Partners</title>
+	<defs>
+		<image  width="35" height="47" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAvCAMAAABexYMQAAAAAXNSR0IB2cksfwAAAEtQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////slWHAAAAABl0Uk5TAKr2sf+wAwHp8Uv5UPdPQ9bE7cOpP/jvTB4JZP8AAACCSURBVHic7dXHDoAgEEXRwV6xl///UgtPY3zBxKWGu2KYszNBkWvKMymx5wcm/8GEMOF7E6GYTHysJElNGZkMm0RyXBdkCgy5lDhpMhpD6YwzznzIVNu1wrC/YxWZullrMbTbUJOx93/T9fc6MoPcG04z4qTJHN9rlAm/mpnMjM20ACWnG1+cZUuAAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Partners">
+		<g id="Logo">
+			<use id="logo-2" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>
