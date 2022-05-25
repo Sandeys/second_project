@@ -9,6 +9,26 @@
 //ПЕРЕМІННІ=========================================
 $mw:1100px;
 
+//INPUT=============================================
+input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none; -moz-appearance: none; appearance: none;}
+.input{
+    position: relative;
+    height: 50px;
+    border-radius: 0 !important;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    border-top: #000 1px solid;
+    padding: 0 20px;
+    background-color: #f8f7f7;
+    &.focus{}
+    &.err{}
+}
+textarea.input{
+    resize: none;
+    height: 117px;
+    padding: 10px 20px;
+}
 //стандартні налаштування для контейнера============
 .container {max-width:$mw; margin:0 auto; width: 100%;}
 
@@ -356,3 +376,100 @@ $mw:1100px;
 
 
 //=======================================================
+
+.contacts {
+    padding: 180px 0 80px 0;
+    &__header-block{
+        margin: 0 0 120px 0;
+    }
+    &__body{
+        @include flexbox();
+        margin: 0px -25px;
+    }
+
+    &__column{
+        flex: 0 1 50%;
+        padding: 0 25px;
+    }
+
+    &__form{
+        text-align: right;
+    }
+
+    &__content{
+        max-width: 260px;
+    }
+
+    &__text{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+        margin: 0 0 35px 0;
+    }
+
+    &__name{
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 0 25px 0;
+    }
+
+    &__social{}
+
+    &__email{
+        font-size: 14px;
+        a{
+            font-weight: 700;
+            color: #000;
+            &:hover{text-decoration: underline;}
+        }
+    }
+}
+
+.header-block {
+    &__title{}
+}
+
+.form-contacts {
+    &__body{
+        display: inline-block;
+        width: 100%;
+        max-width: 385px;
+        text-align: right;
+    }
+
+    &__row{
+        @include flexbox();
+    }
+
+    &__column{
+        flex: 0 1 50%;
+    }
+
+    &__input{
+        padding: 0 25px 20px 0; 
+    }
+
+    &__lable{
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        text-align: left;
+    }
+    &__btn.btn{
+        margin: 35px 0 0 0;
+    }
+
+}
+.input {
+
+}
+
+.social {
+    @include flexbox();
+    margin: 0 0 15px 0;
+    &_item{
+        margin: 0 15px 0 0;
+    }
+}
+
