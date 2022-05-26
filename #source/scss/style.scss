@@ -1,2 +1,41 @@
+//подключили шрифт з google fonts===================
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 @import 'style_null.scss';
 
+//МИКСИНИ===========================================   
+@mixin flexbox() {display: -webkit-box; display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;font-size: 0;}
+@mixin flexboxinline() {display: -webkit-inline-box; display: -moz-inline-box;display: -ms-inline-flexbox;display: -webkit-inline-flex;display: inline-flex;font-size: 0;}
+//ПЕРЕМІННІ=========================================
+$mw:1100px;
+
+//INPUT=============================================
+input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none; -moz-appearance: none; appearance: none;}
+.input{
+    position: relative;
+    height: 50px;
+    border-radius: 0 !important;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    border-top: #000 1px solid;
+    padding: 0 20px;
+    background-color: #f8f7f7;
+    &.focus{}
+    &.err{}
+}
+textarea.input{
+    resize: none;
+    height: 117px;
+    padding: 10px 20px;
+}
+//стандартні налаштування для контейнера============
+.container {max-width:$mw; margin:0 auto; width: 100%;}
+
+//стандартні налаштування для wrapper(обгортки)======
+.wrapper {width: 100%;min-height: 100%;overflow: hidden;
+    @include flexbox();
+    flex-direction: column;
+
+    &.loaded{}
+}
