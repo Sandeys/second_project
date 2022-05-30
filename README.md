@@ -673,6 +673,7 @@ https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-
                         КОРИСНІ ПОСИЛАННЯ 
 BACKGROUND      https://fls.guru/cssbackground.html
 POSITION        https://fls.guru/cssposition.html
+FLEX-BOX		http://fls.guru/flexbox.html
 
                         ШРИВТ
 Google Fonts: https://fonts.google.com/
@@ -681,3 +682,4 @@ Google Fonts: https://fonts.google.com/
 
                         Сайт препроцессора SASS
 https://sass-scss.ru/guide/
+
