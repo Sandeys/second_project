@@ -6,29 +6,56 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./css/style.css">
-   <title>Document</title>
+   <title>FLEX</title>
 </head>
 
 <body>
-   <h1 class="sourse">стилизуй с помощью псевдокласов</h1>
-   <ul class="list">
-      <li>Put on this page information about your product</li>
-      <li>A detailed description of your product</li>
-      <li>Tell us about the advantages and merits</li>
-      <li>Associate the page with the payment system</li>
-   </ul>
-   <form action="#">
-      <button class="button">full story</button>
-      <input class="input" type="text">
-   </form>
-
-   <p class="text_one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore fuga dicta neque, laudan
-      tium ratione nemo architecto tempora consequatur, officia corporis. Officia atque ex minima ac
-      cusantium eius ea excepturi incidunt.
-   </p>
-   <p class="text_two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tempore fuga dicta neque, laudan
-      tium ratione nemo architecto tempora consequatur, officia corporis. Officia atque ex minima ac
-      cusantium eius ea excepturi incidunt.
-   </p>
+   <div class="wrapper">
+      <div class="content">
+         <div class="header">
+            <div class="container">
+               <div class="header__row">
+                  <div class="header__items">
+                     <div class="header__title">Привет, друг!</div>
+                     <div class="header__list">
+                        <ul class="list">
+                           <li class="list__item">У тебя все получится!</li>
+                           <li class="list__item">Никогда не сдавайся!</li>
+                           <li class="list__item">Сегодня ты уже знаешь больше чем вчера!</li>
+                           <li class="list__item">Спасибо тебе за поддержку!</li>
+                        </ul>
+                     </div> 
+                  </div>
+                  <div class="header__imge">
+                     <img src="./img/image.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="flex-box">
+            <div class="container">
+               <div class="flex-box__row">
+                  <div class="flex-box__imge">
+                     <img src="./img/image_2.jpg" alt="">
+                  </div>
+                  <div class="flex-box__items flex-box-r-column">
+                     <div class="flex-box-r-column__title">Что такое FlexBox?</div>
+                     <div class="flex-box-r-column__text">
+                        <p>Flexbox - это целый модуль, содержащий в себе набор свойств и их значений как для родителя flex-контейнера так и для его дочерних элементов flex-элементов. </p>
+                        <p>Основным преимуществом гибкой FLEX разметки является возможность изменять ширину/высоту пространство вокруг и порядок flex-элементов, для того чтобы наилучшим образом заполнить доступное пространство flex-контейнера</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="container">
+            <div class="footer__row">
+               <div class="footer__text">Фрилансер по жизни 2019</div>
+            </div>
+         </div>
+      </div>
+   </div>
 </body>
 </html>
