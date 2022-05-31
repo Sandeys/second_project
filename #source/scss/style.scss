@@ -1,6 +1,7 @@
-//подключили шрифт з google fonts===================
+//подключити шрифт==================================
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
+//Підключити файли стилів===========================
 @import 'style_null.scss';
 
 //МИКСИНИ===========================================   
@@ -26,7 +27,7 @@ input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:n
 }
 textarea.input{
     resize: none;
-    height: 117px;
+    height: 100px;
     padding: 10px 20px;
 }
 //стандартні налаштування для контейнера============
@@ -34,8 +35,6 @@ textarea.input{
 
 //стандартні налаштування для wrapper(обгортки)======
 .wrapper {width: 100%;min-height: 100%;overflow: hidden;
-    @include flexbox();
-    flex-direction: column;
 
     &.loaded{}
 }
