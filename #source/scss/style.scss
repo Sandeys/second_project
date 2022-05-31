@@ -109,8 +109,7 @@ body{
     }
     &__imge{
         margin: 0 10px 0 0;
-        width: 450px;
-        flex: 0 1 auto;
+        flex: 0 1 450px;
     }
     &__items{
         margin: 0 10px 0 0;
@@ -136,5 +135,141 @@ body{
                 padding: 0;
             }
         }
+    }
+}
+
+
+//================================================
+
+.title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    text-align: center;
+}
+
+//================================================
+
+
+.flex-column {
+    background-color: #f5f5f5;
+}
+
+.flex-column__title {
+    padding: 30px 0 25px 0;
+}
+
+.flex-column__row {
+    padding: 0 0 20px 0;
+    @include flexbox();
+    flex-wrap: wrap;
+}
+.flex-column__item {
+    flex:1 1 50%;
+}
+.item__row {
+    @include flexbox();
+    justify-content: space-between;
+}
+.item__imge {
+    padding: 0 0 0 10px;
+    flex: 0 0 200px;
+}
+.item__info {
+    padding: 0px 0 30px 20px;
+    flex: 0 1 auto;
+}
+.info__title {
+    font-size: 24px;
+    line-height: 30px;
+    color: #445161;
+}
+.info__text {
+    padding: 0 10px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+//=======================================
+
+.flex-vertical {
+    padding: 50px 0px;
+    &__title{
+        padding: 0 0 50px 0;
+    }
+    &__row{
+        display: flex;
+
+    }
+    &__column{
+        flex: 1 1 33.333%;
+        padding: 0 22.5px;
+        display: flex;
+    }
+}
+
+.vertical-column__row {
+    @include flexbox();
+}
+
+.vertical-column__item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 0 0 20px 0;
+    background-color: #445162;
+}
+.vertical-column__title {
+    padding: 20px 0;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+.vertical-column__subtitle {
+    min-width: 100%;
+    padding: 20px 0;
+    font-size: 40px;
+    background-color: #fff;
+    line-height: 30px;
+    color: #445162;
+    text-align: center;
+    border: #445162 solid 1px;
+}
+.vertical-column__text {
+    flex: 1 1 auto;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+    p{
+        padding: 0 0 30px 0;
+        &:last-child{
+            padding: 0;
+        }
+    }
+}
+.vertical-column__btn {
+    display: block;
+
+    padding: 10px 0 0 0;
+    margin: 0 20px;
+
+
+    height: 40px;
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    button{
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #445161;
+        font-weight: bold;
+        background-color: #fff;
     }
 }
