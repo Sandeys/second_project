@@ -723,6 +723,8 @@ min-monochrome
 BACKGROUND      https://fls.guru/cssbackground.html
 POSITION        https://fls.guru/cssposition.html
 FLEX-BOX		http://fls.guru/flexbox.html
+TRANSITION		https://fls.guru/csstransition.html
+ANIMATION		https://fls.guru/cssanimation.html
 
                         ШРИВТ
 Google Fonts: https://fonts.google.com/
