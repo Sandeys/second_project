@@ -232,9 +232,11 @@ body{
 .button-blue:hover{
   background-color: #7c9fd8;
 }
+.close-icon-menu,
 .icon-menu{
   display: none;
 }
+
 @media (max-width:767.98px){
   .header__container{
     height: 70px;
@@ -249,7 +251,7 @@ body{
     padding: 90px 15px 30px 15px;
     transition: left 0.5s ease 0s;
   }
-  .menu__body:target{
+  .header:target .menu__body{
     left: 0;
   }
   .header__logo{
@@ -266,6 +268,7 @@ body{
   .menu_item:last-child{
     margin-bottom: 0;
   }
+  .close-icon-menu,
   .icon-menu{
     position: relative;
     flex: 0 0 30px;
@@ -274,6 +277,9 @@ body{
     flex-direction: column;
     justify-content: space-between;
     margin: 0 0 0 20px;
+  }
+  .close-icon-menu{
+    display: none;
   }
   .icon-menu::before,
   .icon-menu::after{
@@ -284,6 +290,25 @@ body{
   .icon-menu span{
     background-color: #000;
     height: 2px;
+  }
+  .close-icon-menu::before,
+  .close-icon-menu::after{
+    content: "";
+    background-color: #000;
+    height: 2px;
+    transform-origin: 0 0;
+  }
+  .close-icon-menu::before{
+    transform: rotate(32deg);
+  }
+  .close-icon-menu::after{
+    transform: rotate(-37deg);
+  }
+  .header:target .icon-menu{
+    display: none;
+  }
+  .header:target .close-icon-menu{
+    display: flex;
   }
   .header__button .button{
     padding: 14px 20px;
