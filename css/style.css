@@ -244,6 +244,7 @@ body{
   .menu__body{
     position: fixed;
     top: 0;
+    overflow: auto;
     left: -100%;
     width: 100%;
     height: 100%;
@@ -253,6 +254,15 @@ body{
   }
   .header:target .menu__body{
     left: 0;
+  }
+  .header:target .menu__body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: #eee;
   }
   .header__logo{
     position: relative;
@@ -328,4 +338,54 @@ body{
     flex: 0 0 40px;
     overflow: hidden;
   }
+}
+
+/*=====================================*/
+
+.main {
+  background-color: #FAFBFD;
+  padding: 150px 0px 50px 0;
+}
+.get-started {
+}
+.get-started__container {
+  display: flex;
+  flex-wrap:wrap;
+}
+.get-started__content {
+  flex: 0 1 48%;
+  padding: 0 0 0 20px;
+}
+.get-started__block-text {
+}
+.block-text {
+}
+.block-text__title {
+}
+.block-text__title_blue {
+}
+.block-text__text {
+}
+.block-text__button {
+}
+.get-started__video {
+  flex: 1 1 100%;
+  margin: 0 0 0 20px;
+}
+.video-get-started {
+  display: inline-flex;
+}
+.video-get-started__icon {
+}
+.video-get-started__body {
+}
+.video-get-started__title {
+}
+.video-get-started__text {
+}
+.get-started__image {
+  flex: 0 1 52%;
+}
+.get-started__image img{
+  max-width: 100%;
 }
