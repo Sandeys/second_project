@@ -779,6 +779,7 @@ FLEX-BOX		http://fls.guru/flexbox.html
 TRANSITION		https://fls.guru/csstransition.html
 ANIMATION		https://fls.guru/cssanimation.html
 TRANSFORMATION	https://fls.guru/transform.html
+GRID 			https://fls.guru/grid.html
 
                         ШРИВТ
 Google Fonts: https://fonts.google.com/
