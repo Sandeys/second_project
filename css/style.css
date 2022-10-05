@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap");
-
-@font-face {
-  font-family: CalSans;
-  font-display: swap;
-  src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"), url("../fonts/CalSans-SemiBold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -30,15 +22,19 @@ nav, footer, header, aside {
   display: block;
 }
 
-body {
+html, body {
   height: 100%;
-  width: 100%;
+  min-width: 320px;
   font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: poppins;
+  color: #666666;
 }
 
 input, button, textarea {
@@ -79,21 +75,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
+/*$mw:1100px;*/
+/*@media (max-width:1200px) {
+    .container {
+        max-width: 970px;
+    }
 }
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
 }
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
 }
+*/
 input[type=text], input[type=email], input[type=tel], textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -117,14 +117,50 @@ textarea.input {
   padding: 10px 20px;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  width: 100%;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
+main{
+  flex: 1 1 auto;
+}
+
+[class*="__container"]{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+----------------------------------
+
+.header {
+}
+.header__container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex ;
+  gap: 131px;
+  min-height: 152px;
+  align-items: center;
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+  display: flex;
+  gap: 56px;
+}
+.menu__item {
+}
+.menu__link {
+  color: rgba(18, 18, 18, 0.4);
+  font-weight: 500;
+  transition:500ms;
+}
+.menu__link:hover {
+  text-decoration: underline;
 }

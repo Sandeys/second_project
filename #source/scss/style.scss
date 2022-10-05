@@ -8,11 +8,11 @@
 @mixin flexbox() {display: -webkit-box; display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;font-size: 0;}
 @mixin flexboxinline() {display: -webkit-inline-box; display: -moz-inline-box;display: -ms-inline-flexbox;display: -webkit-inline-flex;display: inline-flex;font-size: 0;}
 //ПЕРЕМІННІ=========================================
-$mw:1100px;
+/*$mw:1100px;*/
 
 //Media запити======================================
 
-@media (max-width:1200px) {
+/*@media (max-width:1200px) {
     .container {
         max-width: 970px;
     }
@@ -29,7 +29,7 @@ $mw:1100px;
         max-width: none;
     }
 }
-
+*/
 //INPUT=============================================
 input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none; -moz-appearance: none; appearance: none;}
 .input{
@@ -51,7 +51,7 @@ textarea.input{
     padding: 10px 20px;
 }
 //стандартні налаштування для контейнера============
-.container {max-width:$mw; margin:0 auto; width: 100%;}
+//.container {max-width:$mw; margin:0 auto; width: 100%;}
 
 //стандартні налаштування для wrapper(обгортки)======
 .wrapper {width: 100%;min-height: 100%;overflow: hidden;
