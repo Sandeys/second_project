@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("<link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap" rel="stylesheet" />");
+
+@font-face {
+  font-family: Calsans;
+  font-display: swap;
+  src: url(../fonts/CalSans-SemiBold.woff2) format(woff2), url(../fonts/CalSans-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
@@ -123,7 +131,7 @@ textarea.input {
   min-height: 100%;
 }
 
-main{
+.page{
   flex: 1 1 auto;
 }
 
@@ -132,9 +140,14 @@ main{
   margin: 0 auto;
   padding: 0 15px;
 }
-----------------------------------
+/*----------------------------------*/
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
 }
 .header__container {
   padding-top: 5px;
@@ -163,4 +176,64 @@ main{
 }
 .menu__link:hover {
   text-decoration: underline;
+}
+
+/*-----------------------------*/
+
+.main {
+  padding-bottom:80px;
+}
+.main__container {
+  display: flex;
+}
+.main__content {
+  flex: 0 1 50%;
+  align-self:flex-end;
+  padding-bottom: 80px;
+  padding-right:20px;
+}
+.main__title {
+  font-family: 'Calsans';
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 67px;
+
+  color: #121212;
+}
+.main__title span{
+  color: #FF6428;
+}
+.main__title:not(:last-child){
+  margin-bottom: 16px;
+}
+.main__text {
+  font-weight: 500;
+  line-height: 24px;
+  max-width: 360px;
+}
+.main__text:not(:last-child){
+  margin-bottom: 31px;
+}
+.main__actions {
+}
+.actions-main {
+  display: flex;
+  align-items: center;
+}
+.actions-main__button {
+  padding: 18.5px 48px;
+  background-color: #FF6428;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 26px;
+}
+.actions-main__icon {
+}
+.main__decor {
+  flex: 0 1 auto;
+}
+.decor-main {
+}
+.decor-main__image {
 }
